@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+            border: 5px solid rgb(133, 16, 111);
+            height: 500px;
+            display: flex; /*Cambia la orientación de vertical a horizontal*/
+            justify-content: space-between; /*Alinear de forma horizontal de izquierda a derecha*/
+            align-items: center; /*Centrar de manera vertical, de arriba hacia abajo*/
+            
+            /*stretch: alarga todos los elementos para que cubra todo el tamaño
+            flex-start: los manda hacia arriba horizontalmente
+            flex-end: los manda hacia abajo horizontalmente
+            center: los manda al centro */
+        }
+        img {
+            width: 200px;
+        }
+        .contenedor img {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <main class="contenedor">
+        <h1>HOLA</h1>
+        <h2>HOLA</h2>
+        <h1>HOLA</h1>
+        <h2>HOLA</h2>
+    </main>   
+    
+    <div class="contenedor img">
+        <img src="piña.png">
+        <img src="piña.png">
+        <img src="piña.png">
+        <img src="piña.png">
+    </div>
+</body>
+</html>
